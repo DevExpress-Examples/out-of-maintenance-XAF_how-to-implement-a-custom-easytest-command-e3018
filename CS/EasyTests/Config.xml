@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TestRunTimeLimit="3" >
+	<Applications>
+		<!-- Win -->
+		<Application
+			Name="AdditionalCommandsWin"
+			FileName="[WinAppBin]\AdditionalCommands.Win.exe"
+      AdapterFileName="[WinAdapterFileName]"
+			CommunicationPort="4100"/>
+		<!-- Web -->
+		<Application
+			Name="AdditionalCommandsWeb"
+			Url="http://localhost:4030"
+			PhysicalPath="[WebAppBin]"
+      AdapterFileName="[WebAdapterFileName]"
+/>
+		<!-- For IIS -->
+		<!--Application
+			Name="[SolutionName]Web"
+			Url="http://localhost/AdditionalCommands.Web/Default.aspx"
+			 AdapterFileName="[WebAdapterFileName]"/-->
+	</Applications>
+	<TestDatabases>
+		<Database xsi:type="TestMSSQLDatabase" Server="(local)" DBName="AdditionalCommands" />
+	</TestDatabases>
+	<Aliases>
+    <Alias Name="WinAdapterFileName" Value="[ConfigPath]\..\ExtendedWinAdapter\bin\EasyTest\ExtendedWinAdapter.dll" />
+    <Alias Name="WebAdapterFileName" Value="[ConfigPath]\..\ExtendedWebAdapter\bin\EasyTest\ExtendedWebAdapter.dll" />
+    <Alias Name="WinAppBin" Value="[ConfigPath]\..\AdditionalCommands.Win\Bin\EasyTest" />
+		<Alias Name="WebAppBin" Value="[ConfigPath]\..\AdditionalCommands.Web" />
+  </Aliases>
+</Options>
