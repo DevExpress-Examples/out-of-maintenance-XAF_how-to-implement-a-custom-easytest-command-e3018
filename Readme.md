@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [FillDateTimeValueCommand.cs](./CS/AdditionalCommands/FillDateTimeValueCommand.cs) (VB: [FillDateTimeValueCommand.vb](./VB/AdditionalCommands/FillDateTimeValueCommand.vb))
+* [Config.xml](./CS/EasyTests/Config.xml) (VB: [Config.xml](./VB/EasyTests/Config.xml))
+* [Sample.ets](./CS/EasyTests/Sample.ets) (VB: [Sample.ets](./VB/EasyTests/Sample.ets))
+* [ExtendedWebAdapter.cs](./CS/ExtendedWebAdapter/ExtendedWebAdapter.cs) (VB: [ExtendedWebAdapter.vb](./VB/ExtendedWebAdapter/ExtendedWebAdapter.vb))
+* [AssemblyInfo.cs](./CS/ExtendedWebAdapter/Properties/AssemblyInfo.cs)
+* [ExtendedWinAdapter.cs](./CS/ExtendedWinAdapter/ExtendedWinAdapter.cs) (VB: [ExtendedWinAdapter.vb](./VB/ExtendedWinAdapter/ExtendedWinAdapter.vb))
+* [AssemblyInfo.cs](./CS/ExtendedWinAdapter/Properties/AssemblyInfo.cs)
+<!-- default file list end -->
 # How to implement a custom EasyTest command
 
 
